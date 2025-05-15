@@ -1,32 +1,10 @@
 # book-management-api
-Here is the complete README content for your Book Management app with detailed instructions to run and test the app. You can copy this text and save it as a `README.md` file in your project root folder.
 
----
-
-```markdown
 # Book Management Application
 
 This is a full-stack Book Management app with a React frontend and Node.js backend.  
 You can add, update, delete, view books, and import books in bulk from a CSV file.
 
----
-
-## Project Structure
-
-```
-
-book-management-app/
-├── backend/
-│   └── server.js           # Node.js + Express backend API
-├── frontend/
-│   ├── index.html          # Frontend HTML UI
-│   ├── app.js              # Frontend JavaScript
-│   └── sample-books.csv    # Sample CSV file for import
-└── README.md               # This instruction file
-
-````
-
----
 
 ## Prerequisites
 
@@ -90,7 +68,6 @@ Backend API is now running at: `http://localhost:5000`
 
 * Import CSV: Use the Choose File button to select the included `sample-books.csv` or your own CSV file, then click Import CSV.
 
----
 
 ## Sample CSV Format
 
@@ -98,19 +75,15 @@ Your CSV must have headers: `title,author,publishedYear`
 
 Example:
 
-```csv
+csv
+
+
 title,author,publishedYear
 The Alchemist,Paulo Coelho,1988
 Clean Code,Robert C. Martin,2008
 The Pragmatic Programmer,Andrew Hunt,1999
-```
 
----
 
-## API Endpoints
-
-| Method | Endpoint        | Description                  |
-| ------ | --------------- | ---------------------------- |
 | GET    | `/books`        | Retrieve all books           |
 | GET    | `/books/:id`    | Retrieve a single book by ID |
 | POST   | `/books`        | Add a new book               |
@@ -118,7 +91,7 @@ The Pragmatic Programmer,Andrew Hunt,1999
 | DELETE | `/books/:id`    | Delete a book                |
 | POST   | `/books/import` | Import books via CSV file    |
 
----
+
 
 ## Testing with Postman
 
@@ -130,7 +103,9 @@ You can import the following Postman collection JSON to test all endpoints:
 
 3. Replace `{{bookId}}` with actual book IDs from GET responses when testing specific book endpoints.
 
-```json
+json
+
+
 {
   "info": {
     "_postman_id": "book-management-api",
@@ -214,9 +189,7 @@ You can import the following Postman collection JSON to test all endpoints:
     }
   ]
 }
-```
 
----
 
 ## Troubleshooting
 
@@ -225,7 +198,7 @@ You can import the following Postman collection JSON to test all endpoints:
 * Allow CORS if you run backend on a different port.
 * Use latest browsers for best compatibility.
 
----
+
 
 ## Contact
 
