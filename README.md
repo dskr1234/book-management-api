@@ -19,28 +19,28 @@ You can add, update, delete, view books, and import books in bulk from a CSV fil
 
 2. Navigate to the backend folder:
 
-   ```bash
+   bash
    cd book-management-app/backend
-````
+
 
 3. Initialize npm and install required dependencies:
 
-   ```bash
+   bash
    npm init -y
    npm install express cors multer csv-parser uuid
-   ```
+   
 
 4. Start the backend server:
 
-   ```bash
+   bash
    node server.js
-   ```
+   
 
 5. You should see:
 
-   ```
+   
    Server running on port 5000
-   ```
+   
 
 Backend API is now running at: `http://localhost:5000`
 
@@ -205,5 +205,3 @@ json
 For any questions or issues, please reach out.
 
 
-
-Happy coding! 🚀
